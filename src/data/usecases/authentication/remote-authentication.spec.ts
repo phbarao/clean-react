@@ -21,6 +21,6 @@ describe('RemoteAuthentication', () => {
     const { sut, httpPostClientSpy } = makeSut(url)
     await sut.auth()
 
-    expect(httpPostClientSpy.url).toBe(url)
+    expect(httpPostClientSpy.url).toBe('Predo')
   })
 })
