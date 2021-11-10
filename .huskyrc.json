@@ -2,6 +2,6 @@
   "hooks": {
     "pre-commit": "lint-staged",
     "pre-push": "npm run test:ci",
-    "commit-msg": "$1"
+    "commit-msg": "commitlint -E $1"
   }
 }
