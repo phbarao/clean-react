@@ -1,9 +1,9 @@
 
-import faker from 'faker'
+import { internet, random } from 'faker'
 
 import { HttpPostParams } from '../protocols/http'
 
 export const mockPostRequest = (): HttpPostParams<any> => ({
-  url: faker.internet.url(),
-  body: faker.random.objectElement()
+  url: internet.url(),
+  body: random.objectElement()
 })
