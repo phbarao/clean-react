@@ -26,13 +26,17 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-react": "^7.27.0",
     "faker": "^5.5.3",
     "git-commit-msg-linter": "^3.2.8",
     "husky": "^7.0.0",
     "jest": "^27.3.1",
     "lint-staged": "^11.2.6",
     "ts-jest": "^27.0.7",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
   },
   "dependencies": {
     "axios": "^0.24.0",
