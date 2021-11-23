@@ -1,4 +1,4 @@
-@import "../../styles/colors.scss";
+@import '../../styles/colors.scss';
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -12,8 +12,8 @@ body {
   background-color: $background;
 }
 
-input[type="password"], 
-input[type="email"] {
+input[type='password'],
+input[type='email'] {
   border: 1px solid $primaryLight;
   line-height: 40px;
   border-radius: 4px;
@@ -33,7 +33,7 @@ button {
   line-height: 60px;
 
   &:hover {
-    opacity: 0.9
+    opacity: 0.9;
   }
 }
 
@@ -42,23 +42,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  .header {
-    background-color: $primary;
-    display: flex;
-    flex-direction: column;
-    border-top: 40px solid $primaryDark;
-    align-items: center;
-
-    img {
-      margin-top: 40px
-    }
-
-    h1 {
-      color: $white;
-      margin: 16px 0px 40px;
-    }
-  }
 
   .form {
     width: 400px;
@@ -96,7 +79,7 @@ button {
     }
 
     .submit {
-      margin-top: 32px
+      margin-top: 32px;
     }
 
     .link {
@@ -125,11 +108,5 @@ button {
         color: $primaryLight;
       }
     }
-
-  }
-
-  .footer {
-    height: 48px;
-    background-color: $primary;
   }
 }
