@@ -31,10 +31,7 @@ const makeSut = (params?: SutParams): SutTypes => {
     </Router>
   )
 
-  return {
-    sut,
-    authenticationSpy
-  }
+  return { sut, authenticationSpy }
 }
 
 const populateEmailField = (sut: RenderResult, email = faker.internet.email()): void => {
