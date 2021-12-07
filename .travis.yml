@@ -3,6 +3,8 @@ node_js:
   - 12
 cache:
   npm: true
+  directories:
+    - ~/.cache
 script:
   - eslint 'src/**'
   - npm run test:ci
