@@ -1,1 +1,2 @@
 [![Build Status](https://app.travis-ci.com/phbarao/clean-react.svg?branch=master)](https://app.travis-ci.com/phbarao/clean-react)
+[![Coverage Status](https://coveralls.io/repos/github/phbarao/clean-react/badge.svg?branch=master)](https://coveralls.io/github/phbarao/clean-react?branch=master)
