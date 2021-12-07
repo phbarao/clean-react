@@ -15,8 +15,10 @@
   "rules": {
     "@typescript-eslint/consistent-type-definition": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
-    "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/comma-spacing": "off",
+    "@typescript-eslint/return-await": "off",
+    // "@typescript-eslint/camelcase": "off",
+    // "@typescript-eslint/no-unused-vars": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "react/prop-types": 0
