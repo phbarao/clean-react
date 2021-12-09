@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
+import Styles from './login-styles.scss'
 import Context from '@/presentation/contexts/form/form-context'
 import { Footer, LoginHeader, Input, FormStatus } from '@/presentation/components'
 import { Validation } from '@/presentation/protocols/validation'
-import Styles from './login-styles.scss'
-import { Authentication } from '@/domain/usecases'
+import { Authentication, SaveAccessToken } from '@/domain/usecases'
 
+// Verificar sem as props opcionais
 interface Props {
   validation?: Validation
   authentication?: Authentication
+  saveAccessToken: SaveAccessToken
 }
 
-const Login: React.FC<Props> = ({ validation, authentication }: Props) => {
+const Login: React.FC<Props> = ({ validation, authentication, saveAccessToken }: Props) => {
   const history = useHistory()
 
   const [state, setState] = useState({
@@ -48,7 +50,7 @@ const Login: React.FC<Props> = ({ validation, authentication }: Props) => {
         password: state.password
       })
 
-      localStorage.setItem('accessToken', account.accessToken)
+      await saveAccessToken.save(account.accessToken)
 
       history.replace('/')
     } catch (error) {
